@@ -33,7 +33,7 @@ public class Feedback_Servlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
         Class.forName("com.mysql.cj.jdbc.Driver");   
-           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb?useSSL=false","root","Sapana1217@@");
+           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb?useSSL=false","root","Vivek1217@@");
            
            PreparedStatement pstmt=conn.prepareStatement("insert into Feedback_table values(?,?,?,?)");
            String s1 = request.getParameter("Name");
