@@ -36,7 +36,7 @@ public class SignIn_Servlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
              Class.forName("com.mysql.cj.jdbc.Driver");   
-           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb?useSSL=false","root","sapana1217@@");   
+           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/mydb?useSSL=false","root","Vivek1217@@");   
            
            Statement stmt = conn.createStatement();
            ResultSet rs = stmt.executeQuery("SELECT* FROM user_table");
